@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML é fichinha pro pai</title>
+        <meta charset="UTF-8">
+        <style>
+            .cabeçalho{background-color: #f4c51b;
+            padding: 10px;}
+            h1, h2{text-align: center;
+            padding: 10px 0;}
+            ul{ text-align: center;}
+            ul li{ display: inline-block; 
+            padding-right: 20px;}
+            body{font-family: "Arial";
+            background-color: #202124;
+            color: white;}
+            a{text-decoration: none;
+            color: white;
+            font-size: 25px;}
+            img{margin: 0px auto;
+            display: block;}
+            iframe{margin: 0px auto;
+            display: block;}
+            #sobre p{text-align: center;}
+            .video p{text-align: center;}
+            footer{background-color: white;
+            padding: 10px;
+            margin: 5px 0;
+            color: #202124;
+            text-align: center;}
+        </style>
+        <!-- display inline-block deixa a lista em uma única linha-->
+    <body>
+        <header>
+            <h1>JOEDSON SOUZA</h1>
+        </header>
+        <div class="cabeçalho">
+            <ul>
+                <li> <a href="#informacoes">HOME</a> </li>
+                <li> <a href="#linguagens">LINGUAGENS DE PROGRAMAÇÃO</a> </li>
+                <li> <a href="#sobre">SOBRE</a> </li>
+            </ul>
+        </div>
+
+        <nav id="informacoes">
+            <p>Opa! Tudo tranquilo? Fazer uma página com puro HTML é uma parada chata... A questão é nem ser chata, é massa, mas sem usar alguns estilos do CSS fica complicado. Tudo fica estranho e sem harmonia. Dei uma improvisada em uns estilos pra não precisar importar uma folha de estilos do CSS.
+                Ah! Essa não é a minha primeira página em HTML, mas garanto que essa é uma das mais simplesinhas que já fiz.
+            </p>
+        </nav>
+
+        <nav id="linguagens">
+            <p>Essas aqui são as poucas linguagens de programação que já tive contato:
+            </p>
+            <ol>
+                <li>Portugol</li>
+                <li>C</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ol>
+        </nav>
+
+        <nav id="sobre">
+            <h2>THE BEST OF THE WORLD</h2>
+            <p>Me chamo Joedson, tenho 18 anos e como não bebo café pra me manter acordado enquanto codifico, bebo água mesmo. Se liga em como o main Sova é bonitão:</p>
+            <img src="lindo.jpg" alt="O homem mais bonito desse site.">
+            <p>Esse ai é o ADM do site.</p>
+
+            <div class="video">
+                <p>Gosto bastante de escutar músicas e como o São joão está chegando, escuta esse forrózinho aqui ó:</p>
+                <iframe width="1005" height="565" src="https://www.youtube.com/embed/8V_E2q1qsks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </nav>
+
+        <footer>
+            <p>Durma bastante, estou quase ficando lelé da cuca por não dormir adequadamente.</p>
+        </footer>
+    </body>
+</html>
