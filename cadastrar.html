@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar-se</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <script>
+        function exibirData(){
+        var dia = new Date().getData();
+        document.write("hoje é dia " + dia);
+        var mes = new Date().getMonth();
+        document.write("o mês atual é " + mes);
+        var ano = new Date().getFullYear();
+        document.write("o ano atual é " + ano);
+        }
+        console.log(exibirData);
+    </script>
+    <header class="header">
+        <div class="topo">
+            <h1>IPPO MANGÁS</h1>
+            <p>Melhor receber um mangá em casa, do que um jab na cara!</p>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html #mangas">Mangás</a></li>
+            <li><a href="index.html #novidades">Novidades</a></li>
+            <li><a href="https://github.com/joedsonsouza">Contato</a></li>
+            <li><a href="cadastrar.html">Cadastrar-se</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>FORMULÁRIO DE CADASTRAMENTO:</h2>
+        <div class="banner">
+            <img src="CADASTRO.png" alt="GrandBlue" width="100%">
+        </div>
+    </section>
+
+    <section class="cadastro">
+        <h2>SEUS DADOS:</h2>
+        <div>
+            <form action="" method="post">
+                <div class="backf1">
+                    <label for="email">ENDEREÇO DE EMAIL:</label>
+                    <input type="email" name="email" id="email" value=""/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="pwd">SENHA:</label>
+                    <input type="password" name="pwd" id="pwd" value=""/>
+                </div>
+
+                <div class="backf2">
+                    <label for="name">NOME DE USUÁRIO:</label>
+                    <input type="text" name="name" id="name" value=""/>
+                </div>
+                
+                <div class="backf1">
+                    <label>SEXO:</label>
+                    <input type="radio" id="masc" name="sexo" value="masc">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" id="fem" name="sexo" value="fem">
+                    <label for="fem">Feminino</label>
+                    <input type="radio" id="outro" name="sexo" value="outro">
+                    <label for="masc">Outro</label>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="data">DATA DE NASCIMENTO:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+                
+                <div class="backf2">
+                    <label for="foto">FOTO DE PERFIL:</label>
+                    <input type="file" id="foto" name="foto" accept="image/png, image/jpeg">   
+                </div>
+
+                <div class="backf1">
+                    <input type="checkbox" id="simcheck" name="simcheck" checked>
+                    <label for="simcheck">Sim, mantenha-me informado das novidades do Ippo Mangás.</label>    
+                </div>
+                
+                <div class="backf2">
+                    <input type="submit" value="CRIAR CONTA" id="submit">
+                    <input type="reset" value="REINICIAR CADASTRO" id="reset">
+                </div>
+                <input type="button" onclilck="exibirData();" value="exibir a Data">
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>
